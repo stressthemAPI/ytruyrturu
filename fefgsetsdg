@@ -1,0 +1,5 @@
+local keybinds = {"LeftControl", "RightControl"}
+
+local Player = game:GetService("Players").LocalPlayer
+Player.DevEnableMouseLock = true
+Player.PlayerScripts.PlayerModule.CameraModule.MouseLockController.BoundKeys.Value = table.concat(keybinds, ",")
